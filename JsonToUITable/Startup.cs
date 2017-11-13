@@ -13,7 +13,7 @@ namespace JsonToUITable
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            Configuration = configuration;            
         }
 
         public IConfiguration Configuration { get; }
@@ -44,7 +44,7 @@ namespace JsonToUITable
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            });            
         }
     }
 }
